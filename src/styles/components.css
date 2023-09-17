@@ -1,0 +1,73 @@
+.product-list .p-dataview-content .p-grid {
+    justify-content: center;
+}
+
+.product-list .p-dataview-content {
+    background: transparent !important;
+}
+
+.product-list .p-dataview-header {
+    background: white !important;
+}
+
+.image-gallery {
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.image-gallery .p-paginator-first,
+.image-gallery .p-paginator-prev,
+.image-gallery .p-paginator-last,
+.image-gallery .p-paginator-next {
+    display: none;
+}
+
+.basket-sidebar .p-sidebar-header {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0 !important;
+}
+
+.basket-sidebar .p-sidebar-content {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+}
+
+.game-over .p-sidebar-header {
+    display: none !important;
+}
+
+.game-over .p-sidebar-content {
+    padding: 0 !important;
+    background: black;
+}
+
+.game-over .game-over-container h1 {
+    font-size: 100px;
+}
+
+.game-over-info {
+    animation-name: flip-in-diagonal-bl;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+@keyframes flip-in-diagonal-bl {
+
+    0% {
+        transform: rotate3d(1, 1, 0, 80deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate3d(1, 1, 0, 0deg);
+        opacity: 1;
+    }
+}

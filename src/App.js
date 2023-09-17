@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import { MainView } from "./layout/main";
+//alttaki 2 importun calısması icin
+import "primereact/resources/themes/lara-light-indigo/theme.css";
+import "primereact/resources/primereact.min.css";
+//alttaki importun calısması icin
+import "../node_modules/primeflex/primeflex.css";
+//alttaki importun calısması icin
+import 'primeicons/primeicons.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App bg-blue-50 h-full">
+      <MainView />
     </div>
   );
 }
